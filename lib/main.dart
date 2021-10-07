@@ -9,6 +9,10 @@ class MyApp extends StatelessWidget {
     final wordPair = WordPair.random();
     return MaterialApp(
       title: 'Welcome to Flutter',
+      theme: ThemeData(appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+      )),
       home: RandomWords(),
     );
   }
